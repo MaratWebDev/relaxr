@@ -1,0 +1,219 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in LDN
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/Whitespaces solution
+*******************************************/
+
+h1,
+h2,
+h3,
+p, {
+  margin-top: 0;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f0efef;
+}
+
+
+header {
+  /*color: #000;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: Helvetica, Arial, sans-serif;*/
+  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
+  background-size: 100%;
+/*  height: 500px;
+*/  color: white;
+}
+
+  h1 {
+    font-size: 48px;
+    font-weight: 800;
+    padding: 20px 0 0 60px;
+    margin-top: 0;
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 6%;
+  }
+
+  /*********************
+  /* Stylying Main
+  ***********************/
+
+  section {
+    padding-left: 60px;
+  }
+
+  h3 {
+    padding: 20px 0 0 0;
+    margin-top: 0;
+  }
+
+
+/******************************************
+/* Figure styling
+/*******************************************/
+
+  figure {
+    width: 100%;
+    background: url(../images/testimonial_bg.jpg) no-repeat;
+    height: 250px;
+    color: white;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    vertical-align: middle;
+  }
+
+  blockquote {
+    padding-top: 50px;
+
+  }
+
+  figcaption {
+    font-weight: 600;
+    font-weight: bold; 
+  }
+
+
+
+/*****************************
+/*   Button Styles
+******************************/
+
+    .button-parent {
+      vertical-align: middle;
+    }
+
+    .button {
+      display: block;
+      width: 150px;
+      font-size: 14px;
+      font-weight: 800;    
+      border-radius: 5px;
+      padding: 10px;
+      vertical-align: inherit;
+      text-decoration: none;
+    }
+
+    .request {
+      background-color: #f9e42e;
+    }
+
+    .submit-parent {
+      background-color:  #f9e42e;
+      padding: 20px 0;
+    }
+
+    .submit {
+      background-color: #033048;
+      color: white;
+    }
+
+  
+
+/******************************************
+/* Styling Footer
+/*******************************************/
+
+footer {
+  background-color: #121212;
+  color: white;
+}
+
+  footer h1{
+    color: #f9e42e;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  footer ul li {
+    list-style: none;
+    text-decoration:none;
+    display:inline; 
+    padding: 20px 50px 20px 0; 
+  }
+
+  footer p {
+    padding-top: 50px;
+  }
+/*****************************
+ /* Center the container 
+ ******************************/
+
+
+#container {
+  width: 100%;
+  margin: auto;
+  height: 500px;
+}
+
+
+
+
+
+/******************************************
+/* Center Elements
+/*******************************************/
+
+.button,
+h2,
+figure,
+footer p,
+footer ul {
+  text-align: center;
+  margin: 0 auto;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
