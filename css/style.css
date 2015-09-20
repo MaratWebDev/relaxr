@@ -107,6 +107,7 @@ header {
   figure {
     width: 100%;
     background: url(../images/testimonial_bg.jpg) no-repeat;
+    background-size: cover;
     height: 250px;
     color: white;
     font-weight: 300;
