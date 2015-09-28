@@ -45,12 +45,12 @@ Developer @GA in LDN
 /Whitespaces solution
 *******************************************/
 
-h1,
+/*h1,
 h2,
 h3,
 p, {
   margin-top: 0;
-}
+}*/
 
 /******************************************
 /* BASE STYLES
@@ -59,81 +59,165 @@ p, {
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #f0efef;
+  color: #121212;
+  font-size: 24px;
+  font-weight: 300;
 }
 
-
-header {
-  /*color: #000;
-  font-size: 12px;
-  line-height: 1.4;
-  font-family: Helvetica, Arial, sans-serif;*/
-  background: url(../images/header_bg.jpg) no-repeat center top rgb(134,141,157);
-  background-size: cover;
-/*  height: 500px;
-*/  color: white;
+.textarea {
+  max-width: 980px;
+  margin:0 auto;
 }
 
   h1 {
     font-size: 48px;
     font-weight: 800;
-    padding: 20px 0 0 60px;
-    margin-top: 0;
+    padding: 20px 0;
+    margin: 0;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 600;
     padding-bottom: 6%;
   }
 
-  /*********************
-  /* Stylying Main
-  ***********************/
+  a,
+  li {
+    color: #121212;
+    text-decoration: none;
+    list-style: none;
+  }
+/*****************************
+   Header Styles
+******************************/
 
-  section {
-    padding-left: 60px;
+header {
+  background-color: #033048;
+  background-position: 100%;
+  color: white;
+}
+
+h1,
+nav,
+nav li {
+  display: inline-block;
+}
+
+nav {
+  float: right;
+  padding-right: 20px;
+  top: 0;
+}
+  nav li {
+    padding: 20px;
   }
 
-  h3 {
-    padding: 20px 0 0 0;
-    margin-top: 0;
+  nav a {
+    color: #f9e42e;
   }
+/******************************************
+Main Container Styles
+/*******************************************/
+
+
+.main {
+  padding-top: 20px;
+}
+
+/******************************************
+/* Main Articles Styles
+/*******************************************/
+
+.main-articles {
+  float: left;
+  max-width: 700px;
+}
+
+  .main-articles article {
+  border-bottom: 1px solid black;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  }
+
+  .main-articles p:first-letter {
+    color: #606161;
+    text-transform: uppercase;
+    font-size: 100px;
+    line-height: 1;
+    float: left;
+    padding: 0 10px 5px 0;
+  }
+
+  .main-articles img {
+    width: 100%;
+  }
+
+  .main-articles a{
+    float: right;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+
 
 
 /******************************************
-/* Figure styling
+/* Side Bar Styles
 /*******************************************/
 
-  figure {
-    width: 100%;
-    background: url(../images/testimonial_bg.jpg) no-repeat;
-    background-size: cover;
-    height: 250px;
-    color: white;
-    font-weight: 300;
-    font-style: italic;
-    font-size: 18px;
-    vertical-align: middle;
+.side-bar {
+  float: right;
+  max-width: 240px;
+}
+
+  .side-bar h3,
+  .side-bar p,
+  .side-bar a,
+  .ads {
+    text-align: left;
+    margin-left: 20px;
+    padding-left: 20px;
   }
 
-  blockquote {
-    padding-top: 50px;
+    .side-bar h3 {
+      font-size: 32px;
+      font-weight: 800;
+    }
+
+  .side-bar ul {
+    display: inline-block;
+    padding-left: 10px;
 
   }
 
-  figcaption {
-    font-weight: 600;
-    font-weight: bold; 
+    .side-bar li a {
+      font-size: 24px;
+      font-weight: 300;
+      color: #121212;
+    }
+
+    .side-bar article {
+      font-size: 22px;
+    }
+
+      .side-bar article a {
+        font-weight: 600;
+        color: #121212;
+      }
+
+  .ads {
+    margin-top: 40px;
   }
-
-
 
 /*****************************
-/*   Button Styles
+/*   Button Style
 ******************************/
 
     .button-parent {
       vertical-align: middle;
+      background-color:  #f9e42e;
+      padding: 20px 0;
     }
 
     .button {
@@ -145,23 +229,10 @@ header {
       padding: 10px;
       vertical-align: inherit;
       text-decoration: none;
-    }
-
-    .request {
-      background-color: #f9e42e;
-    }
-
-    .submit-parent {
-      background-color:  #f9e42e;
-      padding: 20px 0;
-    }
-
-    .submit {
       background-color: #033048;
       color: white;
     }
 
-  
 
 /******************************************
 /* Styling Footer
@@ -175,7 +246,8 @@ footer {
   footer h1{
     color: #f9e42e;
     text-align: center;
-    padding-left: 0;
+    padding-top: 40px;
+    display: block;
   }
 
   footer ul li {
@@ -186,21 +258,8 @@ footer {
   }
 
   footer p {
-    padding-top: 50px;
+    padding: 50px 0 20px 0;
   }
-/*****************************
- /* Center the container 
- ******************************/
-
-
-#container {
-  width: 100%;
-  margin: auto;
-  height: 500px;
-}
-
-
-
 
 
 /******************************************
@@ -208,8 +267,7 @@ footer {
 /*******************************************/
 
 .button,
-h2,
-figure,
+footer h1,
 footer p,
 footer ul {
   text-align: center;
