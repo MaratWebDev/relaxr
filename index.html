@@ -12,6 +12,14 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 
+		<!-- added javascript scripts -->
+
+		<script type="text/javascript">
+			function pop_up () {
+				alert ("We're Not Ready For Sign-Ups...Yet.");
+      }      
+    </script>
+
 	</head>
 	<body>
 		<div>
@@ -72,9 +80,9 @@
 
 
 				<div class="button-parent clear">
-					<div class="textarea">
-						<a href="" class="button submit" role="button">Sign Up Now!</a>
-					</div>
+					<form class="textarea">
+						<input class="button" type="button" value="Sign Up Now!" onclick="pop_up();" />
+					</form>
 				</div>
 
 			</main>
